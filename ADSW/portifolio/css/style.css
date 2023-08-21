@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.tmicondark {
+    width: 30px; /* Defina o valor de largura que desejar */
+    height: 30px; /* Defina o valor de altura que desejar */
+}
+
+body:not(.dark) {
+    background-color: #fff;
+    color: #000;
+}
+
+.titulo{
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: 'Caprasimo', serif ;
+    padding-left: 1%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* parte da nav bar  */
+header {
+  background-color: #232323;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Caprasimo', cursive;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.imgBT{
+    width: 30px;
+    height: 30px;
+}
+nav {
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav_itens {
+   color: #fff;
+   text-decoration: none;
+   padding: 0 10px;
+}
+  
+.nav_itens:hover {
+   color: #c4ee07;
+}
+
+.apresentacao{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.imagem_perfil{
+    width: 200px;
+    border-radius: 50%;   
+}
+
+.conteudo{
+    flex-grow: 1; 
+    font-size: 18px;
+    text-align: start;
+    margin-bottom: 0 50px 0 15px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.strong{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.link_do_pai {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 400px;
+    gap: 18px
+}
+
+.apresentacao__links {
+    display: block; 
+    background-color: #232323;
+    text-align: center;
+    border-radius: 16px;
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    
+}
+
+.apresentacao__links:hover{
+    color: #c4ee07;
+}
+/* sobre mim */
+
+/* #safe{ */
+.descricao{
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 2%;
+    text-align: justify;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+.Traduzido{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.Topico{
+    margin: 5px;
+    padding-left: 15px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+}
+
+/* Habilidades */
+.legal{
+    margin: 0 2%;
+    width: 50px;
+}
+.imag_box{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 2%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* projetos */
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas de tamanho igual */
+    grid-template-rows: repeat(3, 1fr); /* Três linhas de tamanho igual */
+    gap: 10px; /* Espaçamento entre os itens */
+    margin: 0 5%;
+    background-color: #f0f0f0;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.grid_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px 0;
+
+}
+
+.grid_item img {
+    max-width: 40px;
+    max-height: 40px;
+    object-fit: cover;
+}
+
+/* Estilo para o formulário de contato */
+
+.bgf{
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0; /* Cor de fundo cor do forms */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.name_box{
+    font-size: 18px;
+    font-family: 'Caprasimo', serif;
+    color: var(--bg-color); 
+    margin: 0 10%;
+    margin-bottom: 5px;
+}
+
+#contato input,
+#contato textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contato textarea {
+    resize: vertical;
+}
+
+#contato button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contato button:hover {
+    background-color: #555;
+    color: #c4ee07;
+}
+
+.box{
+    margin: 0 10%;
+}
+
+/* footer */
+
+footer {
+  background-color: #232323;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.final{
+    text-align: center;
+    font-family: 'Caprasimo', cursive;
+}
+/* botao que volta para o topo da tela*/
+.back-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.back-to-top-button:hover {
+    background-color: #2f2f2f;
+}
+
+.vlw{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: 'Caprasimo', serif ;
+    padding-left: 1%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.tamojunto{
+    text-align: center;
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: 'Caprasimo', serif ;
+    padding-left: 1%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/*Dark mode*/
+.dark{
+    background-color: #373636;
+    color: #ffffff;
+}
+
+.descricao.dark_background{
+    background-color: #2e2e2e87;
+    border-top: 1px  #2e2e2e87;
+    border-radius: 10px;
+   
+}
+.grid_container.dark_background{
+    background-color: #2e2e2e87;
+    border: 1px  #2e2e2e87;
+    border-radius: 10px;
+}
+
+.descricao_braba.dark-text {
+    color: #ffffff; 
+    background-color: #2e2e2e87;
+    border: 0px;
+}
+
+.imag_box.dark_img_box{
+    background-color: #2e2e2e87;
+    border: 0px;
+    
+}
+
+.bgf.dark_background{
+    display: flex;
+    flex-direction: column;
+    background-color: #2e2e2e87 ; /* Cor de fundo cor do forms */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.name_box button{
+    --bg-color: #f0f0f0;
+    color: var(--bg-color);
+}
+
+#contato button.bgEnvDark{
+    background:#555;
+}

@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Assistant', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: row;
+    justify-content: center;
+    gap: 15px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.brabor{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.main-content {
+    margin: 50px;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
